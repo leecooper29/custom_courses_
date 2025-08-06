@@ -1,0 +1,106 @@
+/* about.css - Ultra Minimalist */
+
+.about-wrapper {
+      margin: 1rem 1rem;
+      padding: 1rem;
+      font-family: system-ui, sans-serif;
+      color: #111;
+      background-color: lightgray;
+      line-height: 1.6;
+}
+
+.about-content {
+      margin-top: 1rem;
+}
+
+.about-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.about-image {
+      width: 80%;
+      height: 200px;
+      height: auto;
+      margin-top: 1rem;
+      background-color: grey;
+      padding: 1rem;
+}
+
+.about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 2rem;
+      gap: 40px;
+}
+
+.about-section h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+}
+
+.about-section p {
+      font-size: 0.95rem;
+}
+
+.founder-section {
+      margin-top: 2rem;
+}
+
+.founder-description {
+      font-style: italic;
+      color: #333;
+      font-size: 0.95rem;
+}
+
+.faq-questions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 20px;
+      font-size: 14px;
+      gap: 20px;
+      background-color: white;
+      padding: 1rem;
+}
+
+.question {
+      padding-bottom: 15px;
+      padding-top: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-bottom: 1px solid gray;
+}
+
+.question-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+}
+
+.question-header p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1.1rem;
+      font-size: 14px;
+}
+
+.answer {
+      display: none;
+      color: #444;
+      transition: all 0.3s ease;
+}
+
+.answer.show {
+      display: block;
+      font-size: 14px;
+
+}
+
+.faq .fa-plus,
+.faq .fa-minus {
+      font-size: 18px;
+      color: #333;
+}

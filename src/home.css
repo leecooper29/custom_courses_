@@ -1,0 +1,48 @@
+/* home.css */
+.home-container {
+      margin: 1em 1rem;
+      background-color: lightgrey;
+      padding: 20px;
+}
+
+.home-title {
+      font-size: 2rem;
+      color: #333;
+}
+
+.main-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      background-color: white;
+      padding: 1rem;
+}
+
+.main-grid-item {
+      background-color: gray;
+      color: white;
+      padding: 1rem;
+}
+
+.user {
+      display: flex;
+      align-items: center;
+}
+
+.user h1 {
+      padding-left: 1rem;
+}
+
+.course-menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 30vh;
+      gap: 15px;
+      color: black;
+}
+
+.c  {
+      background-color: white;
+      padding: 0.4rem;
+
+}

@@ -7,7 +7,7 @@ import { courses } from '../courses';
 function CourseDetail() {
   const { courseId } = useParams();
   const { addToDashboard } = useContext(DashboardContext);
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
   function handleClick() {
     console.log('Now have access to the PDF file');
@@ -26,6 +26,7 @@ function CourseDetail() {
     
     if (course) {
       addToDashboard(course);
+      console.log('Course added to dashboard');
     }
   };
  

@@ -1,9 +1,13 @@
 // home.jsx]
 import { CgProfile } from "react-icons/cg";
+import { useContext } from 'react';
 import '../css/home.css'; // import the stylesheet
+import { DashboardContext } from '../App';
 // recently updated padding in css for dashboard
 
 function Home() {
+  const { dashboardCourses } = useContext(DashboardContext);
+
   return (
     <div className="home-container">
       <div className="home-content">
@@ -15,22 +19,27 @@ function Home() {
           <div className='main-grid-item'>
           <div className="user">
           <CgProfile />
-          <h1>user.name</h1>
+            <span>Lee Cooper</span>
           </div>
-          <p>user description</p>
+          <p>Passionate learner focused on personal development and financial literacy. Always eager to expand knowledge and skills.</p>
           </div>
             <div className='main-grid-item'>
             <p>Current Enrolled Courses:
             </p>
             <div className="course-menu">
-            <div className="c">
-              <p>course name</p>
-              <p>txt description</p>
-            </div>
-            <div className="c">
-              <p>course name</p>
-              <p>txt description</p>
-            </div>
+            {dashboardCourses.length > 0 ? (
+              dashboardCourses.map((course, index) => (
+                <div className="c" key={course.id || index}>
+                  <p>{course.title}</p>
+                  <p>{course.description}</p>
+                </div>
+              ))
+            ) : (
+              <div className="c">
+                <p>No courses in dashboard yet</p>
+                <p>Visit course details and click "Add to Dashboard" to get started!</p>
+              </div>
+            )}
             </div>
           </div>
         </div>

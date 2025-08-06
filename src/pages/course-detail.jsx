@@ -1,9 +1,13 @@
 import { useParams } from 'react-router-dom';
+import { useContext } from 'react';
 import '../css/coursedetail.css';
+import { DashboardContext } from '../App';
+import { courses } from '../courses';
 
 function CourseDetail() {
   const { courseId } = useParams();
-  // const [index, setIndex] = useState(0);
+  const { addToDashboard } = useContext(DashboardContext);
+  const [index, setIndex] = useState(0);
 
   function handleClick() {
     console.log('Now have access to the PDF file');
@@ -15,6 +19,15 @@ function CourseDetail() {
     link.click();
     document.body.removeChild(link);
   }
+
+  const handleAddToDashboard = () => {
+    // Find the course by title (courseId is the course title)
+    const course = courses.find(c => c.title === courseId);
+    
+    if (course) {
+      addToDashboard(course);
+    }
+  };
  
   return (
     <>
@@ -31,7 +44,7 @@ function CourseDetail() {
           <button className="download" onClick={handleClick}>
             <a href=''>Download Course Material</a>
           </button>
-          <button className='download'>add to cart</button>
+          <button className='download' onClick={handleAddToDashboard}>add to Dashboard</button>
         </div>
       </div>
       <section>

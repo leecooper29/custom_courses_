@@ -1,6 +1,6 @@
 /* footer.css - Compact Grey Theme Footer */
 
-.footer {
+footer {
       background-color: #2e2e2e;
       /* dark grey bg */
       color: #ddd;
@@ -11,11 +11,11 @@
       line-height: 1.4;
 }
 
-
 .between {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 1rem;
 }
 
 .footer-list ul {

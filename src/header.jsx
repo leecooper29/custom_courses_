@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link
-import './header.css';
-import { CgProfile } from "react-icons/cg";
+import './css/header.css';
+// import { CgProfile } from "react-icons/cg";
 function Header() {
   const [animateHeader, setAnimateHeader] = useState(false);
 
@@ -25,9 +25,9 @@ function Header() {
         <nav>
           <ul className="nav-list">
             <li className="nav-item"><Link to="/">Dashboard</Link></li>
-            <li className="nav-item"><Link to="/about">About</Link></li>
-            <li className="nav-item"><Link to="/contact">Contact/Pricing</Link></li>
+            {/* <li className="nav-item"><Link to="/about">About</Link></li> */}
             <li className="nav-item"><Link to="/courses">Courses</Link></li>
+            <li className="nav-item"><Link to="/contact">Pricing/Contact</Link></li>
             <li className='nav-item'>
             <Link to="/profile">
               <img src="https://via.placeholder.com/30" alt="Profile" className="profile-icon" />

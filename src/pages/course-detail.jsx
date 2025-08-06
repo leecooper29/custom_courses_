@@ -1,8 +1,5 @@
 import { useParams } from 'react-router-dom';
-import './coursedetail.css';
-import { useState } from 'react';
-
-
+import '../css/coursedetail.css';
 
 function CourseDetail() {
   const { courseId } = useParams();
@@ -56,7 +53,10 @@ function CourseDetail() {
               &nbsp;
               <span>some text</span>
           </div>
-          <div className='item'></div>
+          <div className='item'>
+                   &nbsp;
+              <span>some text</span>
+          </div>
         </div>
         </div>
       </section>

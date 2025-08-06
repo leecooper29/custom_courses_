@@ -39,36 +39,18 @@ function About() {
         <p>
           Explore a wide range of courses designed to help you grow personally and professionally during your 20s. Whether you're focusing on emotional intelligence, financial planning, or building meaningful relationships, these courses guide you on what it truly means to be a highly educated and skilled individual.
         </p>
+        <hr></hr>
         <p>
           These courses were created by a college student in their 20s who wants to show others that college often teaches you how to be a good worker rather than how to think independently. Many classes in traditional curricula don’t prepare students with practical life skills. Enhanced Youth offers lessons on topics that most colleges and universities don’t teach. Begin your journey on the path to personal and professional growth today!
           <br></br>      
         </p>
+        <hr></hr>
         </div>
         <div className='about-cont'>
         <img src="female-working.jpg" alt="About Image" className="about-image" />  
         <hr></hr>
         "Some quote here Some quote here"
         </div>
-      </section>
-      <section></section>
-      <section className="faq">
-        {/* <h3>Frequently Asked Questions:</h3> */}
-        {/* <div className="faq-questions">
-          {questions.map((item, index) => (
-            <div
-              className={`question ${openIndex === index ? 'open' : ''}`}
-              key={index}
-              onClick={() => toggleAnswer(index)}
-            >
-              <div className="question-header">
-                <p>{item.question}</p>
-              </div>
-              <div className={`answer ${openIndex === index ? 'show' : ''}`}>
-                <p>{item.answer}</p>
-              </div>
-            </div>
-          ))}
-        </div> */}
       </section>
     </div>
   );

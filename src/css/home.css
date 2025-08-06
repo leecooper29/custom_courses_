@@ -1,4 +1,10 @@
 /* home.css */
+
+.h2-home {
+      text-align: start;
+      text-decoration: underline;
+}
+
 .home-container {
       margin: 1em 1rem;
       background-color: lightgrey;

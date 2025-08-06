@@ -1,7 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook, CiYoutube } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
-import './footer.css';
+import './css/footer.css';
 
 function Footer() {
 
@@ -11,7 +11,7 @@ function Footer() {
     console.log('Email subscription logic goes here');
   };
   return (
-    <footer className="footer">
+    <footer>
       <div className="between">
         <nav className="footer-list">
           <ul>

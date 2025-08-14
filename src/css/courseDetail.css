@@ -89,5 +89,8 @@ h2 {
 
 .item {
       background-color: grey;
+      padding: 1rem;
+      color: white;
       height: 20vh;
+      text-align: center;
 }

@@ -11,7 +11,7 @@ function CourseDetail() {
 
   function handleClick() {
     console.log('Now have access to the PDF file');
-    const fileUrl = "/PlainBagelNotes.pdf"; // Path to your file
+    const fileUrl = ""; // Path to your file
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = "plain_bagel_notes.pdf";  
@@ -42,9 +42,9 @@ function CourseDetail() {
           <h2>Access Course Material</h2> 
           <p>Here you can find all the resources related to the course.</p>
           <p>text message</p>
-          <button className="download" onClick={handleClick}>
+          {/* <button className="download" onClick={handleClick}>
             <a href=''>Download Course Material</a>
-          </button>
+          </button> */}
           <button className='download' onClick={handleAddToDashboard}>add to Dashboard</button>
         </div>
       </div>
@@ -56,11 +56,11 @@ function CourseDetail() {
         </div>
         <div className='course-grid'>
           <div className='item'>
-            &nbsp;
-            <span>some text</span>
+            <h3>some text</h3>
+            <span>some text here</span>
           </div>
           <div className='item'>
-              &nbsp;
+            <h3>some text</h3>
               <span>some text</span>
           </div>
           <div className='item'>

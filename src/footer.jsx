@@ -14,11 +14,12 @@ function Footer() {
     <footer>
       <div className="between">
         <nav className="footer-list">
+          {/* links to each page */}
           <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>courses</li>
-            <li>contact</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Courses</li>
+            <li>Contact</li>
           </ul>
         </nav>
         <div>
@@ -39,6 +40,14 @@ function Footer() {
           </nav>
       </div>
       <hr></hr>
+      <div className="between">
+        <div>
+            <p>some text some text some text</p>
+        </div>
+        <div>
+            <p>some text some text some text</p>
+        </div>
+      </div>
     </footer>
   );
 }

@@ -4,7 +4,7 @@ import '../css/about.css';
 function About() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const toggleAnswer = (index) => {
+  const toggleAnswer = (index: null) => {
     setOpenIndex(prevIndex => (prevIndex === index ? null : index));
   };
 

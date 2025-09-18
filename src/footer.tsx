@@ -3,7 +3,7 @@ import { CiFacebook, CiYoutube } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import './css/footer.css';
 
-function Footer(): JSX.Element {
+function Footer() {
 
   const sendEmail = () => {
     alert('Thank you for subscribing to our newsletter!');

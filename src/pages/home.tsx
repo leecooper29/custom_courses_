@@ -4,7 +4,7 @@ import { DashboardContext } from '../App';
 import UserBadge from '../components/UserBadge';
 import DashboardMenu from '../components/DashboardMenu';
 
-function Home(): JSX.Element {
+function Home() {
   const { dashboardCourses } = useContext(DashboardContext);
 
   return (

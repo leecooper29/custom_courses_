@@ -5,7 +5,7 @@ type CourseCardProps = {
   onEnroll: (courseTitle: string) => void;
 };
 
-function CourseCard({ course, onEnroll }: CourseCardProps): JSX.Element {
+function CourseCard({ course, onEnroll }: CourseCardProps) {
   return (
     <div className="grid-item">
       <div className="course-info">

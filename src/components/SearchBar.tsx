@@ -5,7 +5,7 @@ type SearchBarProps = {
   placeholder?: string;
 };
 
-function SearchBar({ label = 'Search', value, onChange, placeholder }: SearchBarProps): JSX.Element {
+function SearchBar({ label = 'Search', value, onChange, placeholder }: SearchBarProps) {
   return (
     <div className="search">
       <label className="lbl">{label}:</label>

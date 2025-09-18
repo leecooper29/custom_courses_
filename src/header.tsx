@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./css/header.css";
 
-function Header(): JSX.Element {
+function Header() {
   const [animateHeader, setAnimateHeader] = useState<boolean>(false);
 
   useEffect(() => {

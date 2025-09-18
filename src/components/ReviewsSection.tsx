@@ -1,6 +1,6 @@
 import ReviewCard from './ReviewCard';
 
-function ReviewsSection(): JSX.Element {
+function ReviewsSection() {
   return (
     <div className="grid-item-">
       <h3>Course Reviews</h3>

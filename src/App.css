@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h4 {
+  margin: 1rem;
+  font-size: 20px;
+}
+
+h3 {
+  text-align: start;
+  font-size: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+  color: white;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+/* .nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background-color: darkblue;
+  transition: width 0.3s ease-in-out;
+} */
+
+.nav-item:hover::after {
+  width: 100%;
+  /* this now matches the width of the text */
+}
+
+.nav-list>li {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+
+
+.join {
+  padding: 0.5rem;
+  background-color: teal;
+  color: white;
+  margin: 2rem;
+}
+
+.col- {
+  color: white;
+  background-color: black;
+  padding: 0.2rem;
+  margin-top: 1.5rem;
+}
+
+.main-grid-wrapper {
+  padding: 2rem;
+  /* max-width: 1200px; */
+  margin: 5rem 0;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
+  gap: 1.4rem;
+  margin: 1rem auto;
+}
+
+.grid-item {
+  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+}
+
+.grid-item h2 {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.list-items {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.list-items>li {
+  list-style: none;
+  padding-right: 1rem;
+}
+
+/*  */
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .header {}
+}

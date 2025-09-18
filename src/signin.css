@@ -1,0 +1,7 @@
+.sign-in-form {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: lightgrey;
+      border-radius: 12px;
+}

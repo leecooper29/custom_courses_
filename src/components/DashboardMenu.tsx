@@ -1,10 +1,11 @@
 import type { Course } from '../courses';
+import EmptyState from './EmptyState';
 
 type DashboardMenuProps = {
   courses: Course[];
 };
 
-function DashboardMenu({ courses }: DashboardMenuProps): JSX.Element {
+function DashboardMenu({ courses }: DashboardMenuProps) {
   return (
     <div className="course-menu">
       {courses.length > 0 ? (
@@ -15,15 +16,13 @@ function DashboardMenu({ courses }: DashboardMenuProps): JSX.Element {
           </div>
         ))
       ) : (
-        <div className="c">
-          <p>No courses in dashboard yet</p>
-          <p>Visit course details and click "Add to Dashboard" to get started!</p>
-        </div>
+        <EmptyState title="No courses in dashboard yet" message={'Visit course details and click "Add to Dashboard" to get started!'} />
       )}
     </div>
   );
 }
 
 export default DashboardMenu;
+
 
 

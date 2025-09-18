@@ -27,3 +27,4 @@ function CourseCard({ course, onEnroll }: CourseCardProps): JSX.Element {
 export default CourseCard;
 
 
+

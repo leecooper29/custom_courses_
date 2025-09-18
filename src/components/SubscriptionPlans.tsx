@@ -1,4 +1,4 @@
-function SubscriptionPlans(): JSX.Element {
+function SubscriptionPlans() {
   return (
     <div className="grid-item-two">
       <div className="sub-grid">
@@ -23,5 +23,6 @@ function SubscriptionPlans(): JSX.Element {
 }
 
 export default SubscriptionPlans;
+
 
 

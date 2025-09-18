@@ -1,7 +1,7 @@
-import { CgProfile } from "react-icons/cg";
 import { useContext } from 'react';
 import '../css/home.css';
 import { DashboardContext } from '../App';
+import UserBadge from '../components/UserBadge';
 import DashboardMenu from '../components/DashboardMenu';
 
 function Home(): JSX.Element {
@@ -16,10 +16,7 @@ function Home(): JSX.Element {
         </div>
         <div className='main-grid'>
           <div className='main-grid-item'>
-          <div className="user">
-          <CgProfile />
-            <span>Lee Cooper</span>
-          </div>
+          <UserBadge name="Lee Cooper" />
           <p>Passionate learner focused on personal development and financial literacy. Always eager to expand knowledge and skills.</p>
           </div>
             <div className='main-grid-item'>

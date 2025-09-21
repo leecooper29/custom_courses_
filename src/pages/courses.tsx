@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../App.css";
-import "../css/courses.css";
+import "../App.scss";
+import "../sass/courses.scss";
 import { useNavigate } from "react-router-dom";
 import { courses } from "../courses";
 import Filter from "../components/filter";

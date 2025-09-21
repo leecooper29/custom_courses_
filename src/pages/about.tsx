@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/about.css';
+import '../sass/about.scss';
 
 function About() {
   const [openIndex, setOpenIndex] = useState(null);

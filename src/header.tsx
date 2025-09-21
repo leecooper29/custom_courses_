@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./css/header.css";
+import "./sass/header.scss";
 
 function Header() {
   const [animateHeader, setAnimateHeader] = useState<boolean>(false);

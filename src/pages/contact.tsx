@@ -1,4 +1,4 @@
-import "../css/contact.css";
+import "../sass/contact.scss";
 import SubscriptionPlans from "../components/SubscriptionPlans";
 
 function onSubmit() {

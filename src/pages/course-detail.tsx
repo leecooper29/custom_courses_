@@ -1,23 +1,23 @@
-import { useParams } from "react-router-dom";
 import { useContext } from "react";
-import "../css/courseDetail.css";
+import { useParams } from "react-router-dom";
 import { DashboardContext } from "../App";
 import { courses } from "../courses";
+import "../sass/courseDetail.scss";
 
 function CourseDetail() {
   const { courseId } = useParams<{ courseId: string }>();
   const { addToDashboard } = useContext(DashboardContext);
 
-  function handleClick() {
-    console.log("Now have access to the PDF file");
-    const fileUrl = "";
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = "plain_bagel_notes.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+  // function handleClick() {
+  //   console.log("Now have access to the PDF file");
+  //   const fileUrl = "";
+  //   const link = document.createElement("a");
+  //   link.href = fileUrl;
+  //   link.download = "plain_bagel_notes.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // }
 
   const handleAddToDashboard = () => {
     const course = courses.find((c) => c.title === courseId);

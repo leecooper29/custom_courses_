@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import '../css/home.css';
+import '../sass/home.scss';
 import { DashboardContext } from '../App';
 import UserBadge from '../components/UserBadge';
 import DashboardMenu from '../components/DashboardMenu';
